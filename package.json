@@ -1,0 +1,25 @@
+{
+  "name": "cli-app",
+  "version": "1.0.0",
+  "description": "command line interface to interact with customers",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "inquirer": "^5.1.0",
+    "mongoose": "^5.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maccauhuru/CLI.git"
+  },
+  "author": "S.L.Mupfukudzwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maccauhuru/CLI/issues"
+  },
+  "homepage": "https://github.com/Maccauhuru/CLI#readme"
+}
