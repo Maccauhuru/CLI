@@ -1,12 +1,12 @@
 /*jshint esversion:6 */
 const mongoose = require('mongoose');
-const schema = mongoose.schema;
+const schema = mongoose.Schema;
 
 
 //create the customer schema
 const customerSchema = schema({
-firstName : {type:String},
-lastName  : {type:String},
+firstname : {type:String},
+lastname  : {type:String},
 phone     : {type:String},
 email     : {type:String}
 });
