@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "command line interface to interact with customers",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
   "dependencies": {
     "commander": "^2.15.0",
     "inquirer": "^5.1.0",

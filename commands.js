@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /* jshint esversion:6 */
 const program = require('commander');
 const { prompt } = require('inquirer');
@@ -60,9 +61,23 @@ program
 .command('update <_id>')
 .alias('u')
 .description('Update a customer')
-.action(()=>{
-   prompt(questions).then(answers => addCustomer(_id,answers));
+.action(_id=>{
+   prompt(questions).then(answers => updateCustomer(_id,answers));
 });
+
+//Remove command
+program
+  .command("remove <_id>")
+  .alias("r")
+  .description("Remove a customer")
+  .action(_id =>  removeCustomer(_id));
+  
+//List command
+program
+.command("list")
+.alias("ls")
+.description("List all customers")
+.action(()=>showCustomers());
 
 
 program.parse(process.argv);
